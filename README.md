@@ -1,7 +1,7 @@
 ### Запуск приложения
 
 - Установить виртуальное окружение: `python -m venve .venv`
-- Активировать окружение командой: `.venv\Scripts\activate`
+- Войти в терминал с активированным новым окружением `.venv\Scripts\activate`
 - Установить необходимые модули: `pip install -r requirements.txt`
 - Выполнить команду `make run` или ввести `python manage.py runserver`
 - Перейти по ссылке `http://127.0.0.1:8000`
