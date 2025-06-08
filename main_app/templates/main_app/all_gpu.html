@@ -1,0 +1,28 @@
+{% extends "main_app/base.html" %}
+
+
+{% block content %}
+    <h1>{{category}} {{brand}}</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Название</th>
+            <th>Бренд</th>
+            <th>Цена</th>
+            <th>Скидка</th>
+            <th>В наличии</th>
+            <th>Рейтинг</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.название }}</td>
+            <td>{{ row.бренд }}</td>
+            <td>{{ row.цена }}</td>
+            <td>{{ row.скидка }}</td>
+            <td>{{ row.наличие }}</td>
+            <td>{{ row.рейтинг }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}

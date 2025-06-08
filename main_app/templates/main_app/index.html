@@ -1,0 +1,44 @@
+{% extends "main_app/base.html" %}
+
+
+{% block content %}
+<br/>
+<div style="width: 70%; margin: 0 auto; text-align: center;">
+    <h6>Главная страница</h6>
+    <div class="pb-1 mb-1 border-bottom"></div>
+    <br/><br/>
+    <h6>Видеокарты с WB</h6>
+    <br/>
+    <h6>GIGABYTE</h6>
+    <a class="btn btn-outline-success btn-sm"
+           href="{% url 'main_app:mb_gigabyte' %}">Мат.платы ddr5</a>
+    <a class="btn btn-success btn-sm"
+           href="{% url 'main_app:all_gpu_gigabyte' %}">Все видеокарты</a>
+    <a class="btn btn-success btn-sm"
+           href="{% url 'main_app:gpu_12gb_gigabyte' %}">12gb</a>
+    <a class="btn btn-success btn-sm"
+           href="{% url 'main_app:gpu_8gb_gigabyte' %}">8gb</a>
+    <br/><br/>
+    <h6>MSI</h6>
+    <a class="btn btn-outline-danger btn-sm"
+           href="{% url 'main_app:mb_msi' %}">Мат.платы ddr5</a>
+    <a class="btn btn-danger btn-sm"
+           href="{% url 'main_app:all_gpu_msi' %}">Все видеокарты</a>
+    <a class="btn btn-danger btn-sm"
+           href="{% url 'main_app:gpu_12gb_msi' %}">12gb</a>
+    <a class="btn btn-danger btn-sm"
+           href="{% url 'main_app:gpu_8gb_msi' %}">8gb</a>
+    <br/><br/>
+    <h6>ASUS</h6>
+    <a class="btn btn-outline-warning btn-sm"
+           href="{% url 'main_app:mb_asus' %}">Мат.платы ddr5</a>
+    <a class="btn btn-warning btn-sm"
+           href="{% url 'main_app:all_gpu_asus' %}">Все видеокарты</a>
+    <a class="btn btn-warning btn-sm"
+           href="{% url 'main_app:gpu_12gb_asus' %}">12gb</a>
+    <a class="btn btn-warning btn-sm"
+           href="{% url 'main_app:gpu_8gb_asus' %}">8gb</a>
+
+</div>
+<br/><br/><br/><br/><br/><br/>
+{% endblock content %}
